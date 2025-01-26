@@ -8,9 +8,40 @@ a {
     text-decoration: none;
 }
 
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
 ul, ol {
     list-style-type: none;
+    margin: 0;
+    padding:0;
 }
+
+p, h1, h2, h3, h4, a {
+    margin: 0;
+}
+
+
+.container, .header-container, .container-footer {
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+
 
 .page-title {
     font-size: 56px;
@@ -18,6 +49,9 @@ ul, ol {
     line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
+    max-width: 496px;
+    margin: 0 auto;
+    margin-bottom: 56px;
 }
 
 .headline-h2 {
@@ -35,6 +69,7 @@ ul, ol {
     text-align: center;
     text-transform: capitalize;
     color:#2e2f42;
+    margin-bottom: 72px;
 }
 
 .section-subheadline {
@@ -43,17 +78,21 @@ ul, ol {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .body-text {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.00em;
 }
 
 .header {
+    display: flex;
     background-color: #ffffff;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .header-logo {
@@ -68,6 +107,30 @@ ul, ol {
 
 .header-logo-accent {
     color:#2e2f42;
+}
+
+.header-menu-list {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.header-navigation {
+    display: flex;
+    align-items: center;
+    gap: 76px;
+}
+
+.address-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header-menu-link {
@@ -109,7 +172,9 @@ ul, ol {
 
 .hero {
     background-color: #2e2f42;
-    color:#ffffff
+    color:#ffffff;
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 
 .primary-button {
@@ -124,6 +189,9 @@ ul, ol {
     padding: 16px 32px;
     border: none;
     border-radius: 4%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .primary-button:hover {
@@ -136,17 +204,94 @@ ul, ol {
     background-color: #404bbf;
 }
 
+.features {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.features-list {
+    display: flex;
+    gap: 24px;
+}
+
+.features-item {
+    flex-basis: calc((100% - 72px) / 4);
+}
+
+
 .team {
-    background-color: #F4F4FD ;
+    background-color: #F4F4FD;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
-.team-item{
+.team-text-card {
+    padding: 32px 16px 32px 16px;
+    border-radius: 0px 0px 4px 4px;
     background-color: #ffffff;
+    box-shadow: 0 2 1 0 #000000;
+    text-align: center;
 }
 
-.footer{
+.team-list {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.team-item {
+    display: flex;
+    flex-direction: column;
+    flex-basis: calc((100% - 72px) / 4);
+    flex-grow: 1;
+}
+
+.portfolio-list {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+
+
+}
+.portfolio-item {
+    display: flex;
+    flex-direction: column;
+    flex-basis: calc((100% - 72px) / 3);
+}
+
+.portfolio-text-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 32px 16px;
+    border-left: 1px solid #E7E9FC;
+    border-right: 1px solid #E7E9FC;
+    border-bottom: 1px solid #E7E9FC;
+}
+
+.our-portfolio {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.body-text-footer {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    max-width: 264px;
+}
+.footer {
     background-color: #2e2f42;
     color:#F4F4FD;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.container-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .footer-logo {
@@ -157,8 +302,10 @@ ul, ol {
     line-height: 1.17;
     letter-spacing: 0.03em;
     color: #4d5ae5;
+    display: block;
 }
 
 .footer-logo-accent {
     color: #f4f4fd;
 }
+
