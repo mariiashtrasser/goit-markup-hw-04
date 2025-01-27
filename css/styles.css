@@ -35,7 +35,8 @@ p, h1, h2, h3, h4, a {
 
 
 .container, .header-container, .container-footer {
-    width: 1158px;
+    width: 100%;
+    max-width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -176,9 +177,16 @@ p, h1, h2, h3, h4, a {
 
 .hero {
     background-color: #2e2f42;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7), 
+        rgba(46, 47, 66, 0.7)), 
+        url(../images/background-image.jpg);
+    background-repeat: no-repeat;
+    max-width: 1440px;
     color:#ffffff;
     padding-top: 188px;
     padding-bottom: 188px;
+    margin: 0 auto;
 }
 
 .primary-button {
@@ -216,13 +224,23 @@ p, h1, h2, h3, h4, a {
 
 .features-list {
     display: flex;
+    flex-wrap: wrap;
     gap: 24px;
+}
+
+.features-icon {
+    width: 100%;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    background-color: #F4F4FD;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    margin-bottom: 8px;
 }
 
 .features-item {
     flex-basis: calc((100% - 72px) / 4);
 }
-
 
 .team {
     background-color: #F4F4FD;
@@ -231,10 +249,11 @@ p, h1, h2, h3, h4, a {
 }
 
 .team-text-card {
-    padding: 32px 0;
+    padding: 32px 16px;
     background-color: #ffffff;
     box-shadow: 0 2 1 0 #000000;
     text-align: center;
+
 }
 
 .team-list {
@@ -250,6 +269,28 @@ p, h1, h2, h3, h4, a {
     flex-grow: 1;
     border-radius: 0px 0px 4px 4px;
     overflow: hidden;
+}
+
+.team-body-text{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.00em;
+    margin-bottom: 8px;
+}
+
+.social-icons{
+    display: flex;
+    gap: 24px;
+}
+
+.icon {
+    padding: 12px;
+    color:#ffffff;
+    background-color:#4d5ae5;
+    border-radius: 50%;
+    overflow: visible;
+    fill: #ffffff;
 }
 
 .portfolio-list {
@@ -297,7 +338,7 @@ p, h1, h2, h3, h4, a {
 
 .container-footer {
     display: flex;
-    flex-direction: column;
+    gap: 120px;
 }
 
 .footer-logo {
@@ -312,7 +353,19 @@ p, h1, h2, h3, h4, a {
     margin-bottom: 16px;
 }
 
+.footer-subheadline {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.00em;
+    margin-bottom: 16px;
+}
+
 .footer-logo-accent {
     color: #f4f4fd;
 }
 
+.icons-footer {
+    display: flex;
+    gap: 16px;
+}
