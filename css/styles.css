@@ -267,6 +267,7 @@ p, h1, h2, h3, h4, a {
     border: 1px solid #8E8F99;
     border-radius: 4px;
     margin-bottom: 8px;
+    flex-wrap: wrap;
 }
 
 .features-item {
