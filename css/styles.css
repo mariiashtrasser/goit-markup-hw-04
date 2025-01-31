@@ -330,6 +330,7 @@ p, h1, h2, h3, h4, a {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover {
@@ -394,7 +395,7 @@ p, h1, h2, h3, h4, a {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
-    letter-spacing: 0.00em;
+    letter-spacing: 0.02em;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -472,5 +473,13 @@ p, h1, h2, h3, h4, a {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-link-footer:hover {
+    background-color: #31d0aa;
+}
+
+.social-link-footer:focus {
+    background-color: #31d0aa;
 }
