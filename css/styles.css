@@ -214,6 +214,8 @@ p, h1, h2, h3, h4, a {
     padding-top: 188px;
     padding-bottom: 188px;
     margin: 0 auto;
+    background-position: center;
+    background-size: cover;
 }
 
 .primary-button {
@@ -232,6 +234,7 @@ p, h1, h2, h3, h4, a {
     margin-left: auto;
     margin-right: auto;
     min-width: 169px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .primary-button:hover {
@@ -255,10 +258,11 @@ p, h1, h2, h3, h4, a {
     gap: 24px;
 }
 
-.features-icon {
-    width: 100%;
-    padding-top: 24px;
-    padding-bottom: 24px;
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
     background-color: #F4F4FD;
     border: 1px solid #8E8F99;
     border-radius: 4px;
