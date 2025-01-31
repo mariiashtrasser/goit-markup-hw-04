@@ -280,7 +280,7 @@ p, h1, h2, h3, h4, a {
 }
 
 .team-text-card {
-    padding: 32px 16px;
+    padding: 32px 0px;
     background-color: #ffffff;
     box-shadow: 0 2 1 0 #000000;
     text-align: center;
@@ -300,6 +300,7 @@ p, h1, h2, h3, h4, a {
     flex-grow: 1;
     border-radius: 0px 0px 4px 4px;
     overflow: hidden;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team-body-text{
@@ -313,6 +314,7 @@ p, h1, h2, h3, h4, a {
 .social-icons{
     display: flex;
     gap: 24px;
+    justify-content: center;
 }
 
 .icon {
