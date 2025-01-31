@@ -376,19 +376,6 @@ p, h1, h2, h3, h4, a {
     flex-direction: column;
 }
 
-.overlay {
-    width: 100%;
-    height: 100%;
-    background-color: #4d5ae5;
-    color: #ffffff;
-    padding: 40px 32px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translatey(100%);
-    transition: transform 250ms ease-in-out;
-}
-
 .overlay-body-text{
     width: 100%;
     height: 100%;
@@ -403,10 +390,6 @@ p, h1, h2, h3, h4, a {
 }
 
 .image-box:hover .overlay-body-text{
-    transform: translatey(0);
-}
-
-.image-box:hover .overlay{
     transform: translatey(0);
 }
 
