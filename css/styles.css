@@ -389,7 +389,7 @@ p, h1, h2, h3, h4, a {
     transition: transform 250ms ease-in-out;
 }
 
-.image-box:hover .overlay-body-text{
+.image-box:hover .overlay-body-text {
     transform: translatey(0);
 }
 
