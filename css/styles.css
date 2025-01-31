@@ -316,15 +316,24 @@ p, h1, h2, h3, h4, a {
     display: flex;
     gap: 24px;
     justify-content: center;
+    justify-content: center;
+    align-items: center;
 }
 
-.icon {
-    padding: 12px;
+.social-link {
     color:#ffffff;
     background-color:#4d5ae5;
     border-radius: 50%;
     overflow: visible;
     fill: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    box-sizing: border-box;
+    padding: 12px;
 }
 
 .portfolio-list {
