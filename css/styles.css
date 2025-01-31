@@ -321,19 +321,23 @@ p, h1, h2, h3, h4, a {
 }
 
 .social-link {
-    color:#ffffff;
     background-color:#4d5ae5;
     border-radius: 50%;
     overflow: visible;
+    height: 40px;
+    width: 40px;
     fill: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.icon {
-    box-sizing: border-box;
-    padding: 12px;
+.social-link:hover {
+    background-color: #404bbf;
+}
+
+.social-link:focus {
+    background-color: #404bbf;
 }
 
 .portfolio-list {
