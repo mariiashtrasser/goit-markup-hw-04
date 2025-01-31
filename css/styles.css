@@ -337,7 +337,7 @@ p, h1, h2, h3, h4, a {
     background-color: #404bbf;
 }
 
-.social-link:focus {
+.social-link:active {
     background-color: #404bbf;
 }
 
@@ -480,6 +480,6 @@ p, h1, h2, h3, h4, a {
     background-color: #31d0aa;
 }
 
-.social-link-footer:focus {
+.social-link-footer:active {
     background-color: #31d0aa;
 }
